@@ -17,6 +17,7 @@ module Guard
     def run_all
       generate_bundler_tags
       generate_project_tags ["."]
+      UI.info 'regenerating all tags...'
     end
 
     def run_on_change(paths)
